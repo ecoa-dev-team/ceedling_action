@@ -6,7 +6,10 @@ RUN apt-get update \
   && apt install -y -q \
   gcc \
   gcovr \
-  ruby
+  ruby \
+  ruby-dev \
+  build-essential \
+  && rm -rf /var/lib/apt/lists/*
 RUN gem install erb -v 4.0.4.1
 RUN gem install ceedling 
 
