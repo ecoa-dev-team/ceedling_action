@@ -8,7 +8,7 @@ RUN apt-get update \
   gcovr \
   ruby
 
-RUN gem install ceedling --version ">=1.0"
+RUN gem install ceedling 
 
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
