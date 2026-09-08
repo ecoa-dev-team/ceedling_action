@@ -7,7 +7,7 @@ RUN apt-get update \
   gcc \
   gcovr \
   ruby
-
+RUN gem install erb -v 4.0.4.1
 RUN gem install ceedling 
 
 ADD entrypoint.sh /entrypoint.sh
