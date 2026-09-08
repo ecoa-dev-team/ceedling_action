@@ -11,8 +11,8 @@ RUN apt-get update \
   build-essential \
   && rm -rf /var/lib/apt/lists/*
 
-RUN gem install erb -v 4.0.4.1
-RUN gem install ceedling --version "~> 1.0"
+RUN gem install erb -v 4.0.4.1 --no-document
+RUN gem install ceedling --version "~> 1.0" --no-document
 
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
