@@ -12,7 +12,7 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/*
 
 RUN gem install erb -v 4.0.4.1 --no-document
-RUN gem install ceedling --version "~> 1.0" --no-document
+gem install ceedling --version "1.1.6" --no-document
 
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
